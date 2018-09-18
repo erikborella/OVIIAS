@@ -10,19 +10,35 @@ function btn() {
     var senha = $("#inputPassword");
     var pode = false;
 
+    if(!username){
+        alert("Informe seu nome de usuário");
+        return;
+    }
+    if(!senha){
+        alert("Informe sua senha");
+        return;
+    }
+
     for (var i = 0; i < usuario.length; i++) {
         if (usuario[i].user === username && usuario[i].senha === senha) {
             pode = true;
             alert("Parabéns");
+            localStorage.setItem('loggedIndex', ''+i);
             break;
         }
     }
     if (!pode) {
         alert("Dados Incorretos")
     }
+
 }
 
 
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    return document.querySelector(element).value;
+    try {
+        return document.querySelector(element).value;
+    }
+    catch {
+        console.error("elemento não encontrado");
+    }
 }

@@ -14,6 +14,27 @@ function btn() {
     var email = $("#inputEmail");
     var pode = true;
     var boOrobo = !true;
+
+    if(!nome){
+        alert("Informe seu nome");
+        return;
+    }
+    if(!sobrenome){
+        alert("Informe seu sobrenome");
+        return;
+    }
+    if(!user){
+        alert("Informe seu nome de usuário");
+        return;
+    }
+    if(!password){
+        alert("Informe sua senha");
+        return;
+    }
+    if(!email){
+        alert("Informe seu email");
+        return;
+    }
     
     var robo = prompt('Digite exatamente "NÃO SOU UM ROBÔ"');
     boOrobo = robo === "NÃO SOU UM ROBÔ"; //Verifica se a pessoa é ou não um robo
@@ -75,5 +96,10 @@ function btn() {
 
 }
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    return document.querySelector(element).value;
+    try {
+        return document.querySelector(element).value;
+    }
+    catch {
+        console.error("elemento não encontrado");
+    }
 }
