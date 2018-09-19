@@ -15,27 +15,27 @@ function btn() {
     var pode = true;
     var boOrobo = !true;
 
-    if(!nome){
+    if (!nome) {
         alert("Informe seu nome");
         return;
     }
-    if(!sobrenome){
+    if (!sobrenome) {
         alert("Informe seu sobrenome");
         return;
     }
-    if(!user){
+    if (!user) {
         alert("Informe seu nome de usuário");
         return;
     }
-    if(!password){
+    if (!password) {
         alert("Informe sua senha");
         return;
     }
-    if(!email){
+    if (!email) {
         alert("Informe seu email");
         return;
     }
-    
+
     var robo = prompt('Digite exatamente "NÃO SOU UM ROBÔ"');
     boOrobo = robo === "NÃO SOU UM ROBÔ"; //Verifica se a pessoa é ou não um robo
 
@@ -75,9 +75,10 @@ function btn() {
                     'bairro': '',
                     'numero': ''
                 },
-                'pagamento':{
+                'pagamento': {
                     'cartaoDeCredito': '',
-                    'validade' : ''
+                    'validade': '',
+                    'nomeDoProrietario': ''
                 },
                 'carinho': [
                     {

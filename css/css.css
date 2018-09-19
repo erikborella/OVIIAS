@@ -1,3 +1,23 @@
+*{
+    color: black;
+    font-family:'Roboto',sans-serif;
+}
+.joaquin{
+    margin-left: 8%;
+}
 input{
-   border-radius: 5%;
+    height: 10%;
+    width: 13%;
+}
+hr{
+	border: 1px solid black;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.first{
+    margin-bottom: 2%;
+    margin-left: -8%;   
+}
+body{
+    background-color: #eceff1 ;
 }

@@ -60,9 +60,9 @@ function btn() {
         return;
     }
 
-    for(var i = 0;i < usuario[login].carinho.lenght;i++){
-     for(var j = 0;j<produtos.lenght;j++){
-            if(usuario[login].carinho[i] == produtos[j].id){
+    for (var i = 0; i < usuario[login].carinho.lenght; i++) {
+        for (var j = 0; j < produtos.lenght; j++) {
+            if (usuario[login].carinho[i] == produtos[j].id) { // Soma os preços dos produtos que estão no carinho
                 preco += carinho[i].preco;
             }
         }
@@ -71,6 +71,7 @@ function btn() {
     pode = confirm("Preço a pagar: " + preco + "\nDeseja confirmar a compra?");
 
     if (pode) {
+        alert("Compra efetuada com sucesso");
         usuario[login].endereco.pais = pais;
         usuario[login].endereco.estado = estado;
         usuario[login].endereco.cidade = cidade;
@@ -79,12 +80,7 @@ function btn() {
         usuario[login].endereco.pagamento = credito;
         usuario[login].endereco.pagamento = validade;
         localStorage.setItem('user', JSON.stringify(usuario));
-        alert("Compra efetuada com sucesso");
     } else {
         alert("Compra cancelada");
     }
-
-
-
-
 }
