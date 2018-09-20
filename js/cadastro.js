@@ -31,10 +31,11 @@ function btn() {
         alert("Informe sua senha");
         return;
     }
-    if (!email) {
-        alert("Informe seu email");
+    if (!email || email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+        alert("Email inválido");
         return;
     }
+    
 
     var robo = prompt('Digite exatamente "NÃO SOU UM ROBÔ"');
     boOrobo = robo === "NÃO SOU UM ROBÔ"; //Verifica se a pessoa é ou não um robo
