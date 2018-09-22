@@ -169,19 +169,20 @@ function cadastrar() {
         
         let name = $("#nameI");
         let tipo = $("#tipoI");
-        let id = $("#idI");
         let estoque = $("#estoqueI");
         let preco = $("#precoI");
         let descricao = $("#descriçãoI");
+        let cor = $("#corI");
+        let img = $("#imgI");
 
-        if (!name && !tipo && !id && !estoque && !preco && !descricao) {
+        if (!name && !tipo && !id && !estoque && !preco && !descricao && !cor && !img) {
             alert("Alguns campos não foram digitados");
-        
-
         }
         else {
             
-        
+            console.log(addProdutos_AutoId(name, tipo, estoque, preco, descricao, cor, img));
+            
+            
 
         }
 
