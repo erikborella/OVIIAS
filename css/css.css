@@ -21,3 +21,9 @@ hr{
 body{
     background-color: #eceff1 ;
 }
+a{
+	text-decoration: none;
+}
+html{
+    overflow-x:hidden;
+}
