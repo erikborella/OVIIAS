@@ -10,10 +10,10 @@ function btn() {
     var nome = $("#inputNome");
     var sobrenome = $("#inputSobrenome");
     var user = $("#inputUser");
-    var password = $("#inputSenha");
+    var password = $("#inputSenha"); //Seletor de elementos
     var email = $("#inputEmail");
     var pode = true;
-    var boOrobo = !true;
+    var boOrobo = !true; 
 
     if (!nome) {
         alert("Informe seu nome");
@@ -62,7 +62,7 @@ function btn() {
         }
 
         if (pode) {
-            usuario.push({
+            usuario.push({ //Envia as informações para o localstorage
                 'nome': nome,
                 'sobrenome': sobrenome,
                 'user': user,
