@@ -1,10 +1,12 @@
 var produtos = JSON.parse(localStorage.getItem("produtos"));
 
+//verifica se existe algum produto cadastrado
 if (!produtos) {
     $(".conteudo", `<h1>Nenhum produto cadastrado</h1>`)
 }
+//se existir vai gerar um html com todos os produtos e suas informações
 else {
-    var content;
+    var content = ``;
     for (let i in produtos) {
         content += `
         <div class="row">
@@ -22,15 +24,13 @@ else {
     $(".conteudo", content);
 }
 
+// TODO: Essa função vai servir para poder dizer qual é o indice do produto selecionado para poder ser gerado posteriomente
 function selecProd(index) {
     console.log(index);
     
 }
 
-
-
-
-
+//essa função serve para adicionar o html gerado na pagina
 function $(element, value) {
     document.querySelector(element).innerHTML = value;
 }

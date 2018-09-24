@@ -101,7 +101,7 @@ function $(element) { //QUERIA PODER USAR JQUERY ;-;
     try {
         return document.querySelector(element).value;
     }
-    catch {
-        console.error("elemento não encontrado");
+    catch (Exeption){
+        console.error("Elemento não encontrado");
     }
 }

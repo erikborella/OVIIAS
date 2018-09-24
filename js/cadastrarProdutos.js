@@ -1,4 +1,6 @@
 //Essa função serve para adicionar produtos na key de produtos com um id especifico
+
+//FIXME: Função não testada 100%. possibilidade de erros
 function addProdutos(nome, tipo, id, estoque, preco, descricao, cor, imgs) {
 
     //verifica se todos os parametros são validos
@@ -149,22 +151,18 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
             }
         });
 
-        localStorage.setItem("produtos", JSON.stringify(prods));
+        localStorage.setItem("produtos", JSON.stringify(prods));        
 
-        console.log(idCont);
-        
-
-        
     }
 }
 
 function cadastrar() {
     if (prompt("Digite a senha de admistrador") == "tijolinhos") {
 
+        /* Declaros sempre essa variavel $ por ela ser muito usada tanto para pegar elementos da pagina tanto para colocarmos lá
+        Tiramos a ideia de usar o $ do Jquerry, pois estamos muitos famiarizados em usar esse recurso envolvendo o $ do propio Jquerry */
         var $ = (element) => {
             return document.querySelector(element).value;
-            
-            
         };
         
         let name = $("#nameI");
@@ -179,14 +177,9 @@ function cadastrar() {
             alert("Alguns campos não foram digitados");
         }
         else {
-            
-            console.log(addProdutos_AutoId(name, tipo, estoque, preco, descricao, cor, img));
-            
-            
-
+            var log = addProdutos_AutoId(name, tipo, estoque, preco, descricao, cor, img);
+            alert(log.message);
         }
-
-        
 
     }
     else {
