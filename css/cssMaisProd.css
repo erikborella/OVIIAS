@@ -1,4 +1,3 @@
-
 [class*="col-"] {
     float: left;
 }
@@ -54,6 +53,16 @@ header img{
 	float: right;
 	margin-right: 15%;
 	margin-top: -3.5%
+}
+.comprar2{
+	float: right;
+	margin-right: 2%;
+	margin-top: 0.8%;
+}
+.comprar3{
+	float: right;
+	margin-right: 6%;
+	margin-top: 0.8%;
 }
 .hmm a{
 	font-size: 1.5em;
