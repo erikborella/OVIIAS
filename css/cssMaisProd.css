@@ -2,9 +2,6 @@
 [class*="col-"] {
     float: left;
 }
-body{
-	background-color: #282828;
-}
 a{
 	text-decoration: none;
 	color: black;
@@ -16,12 +13,6 @@ hr{
 	border: 1px solid black;
 	margin-left: 2%;
 	margin-right: 2%;
-}
-footer{
-	float: left;
-	padding: 3% 4%;
-	text-align: center;
-	background-color: black;
 }
 header {
 	padding: 2%;
