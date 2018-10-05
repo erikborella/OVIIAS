@@ -81,12 +81,7 @@ function btn() {
                     'validade': '',
                     'nomeDoProrietario': ''
                 },
-                'carinho': [
-                    {
-                        'id': '',
-                        'quant': ''
-                    }
-                ],
+                'carinho': [],
                 'idSelect': ''
             });
             alert("Parabains");

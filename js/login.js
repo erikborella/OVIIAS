@@ -38,7 +38,7 @@ function $(element) { //QUERIA PODER USAR JQUERY ;-;
     try {
         return document.querySelector(element).value;
     }
-    catch {
+    catch (e){
         console.error("elemento não encontrado");
     }
 }

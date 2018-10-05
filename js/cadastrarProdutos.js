@@ -186,4 +186,3 @@ function cadastrar() {
         alert("Senha incoreta");
     }
 }
-
