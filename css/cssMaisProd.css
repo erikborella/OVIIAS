@@ -1,5 +1,9 @@
+
 [class*="col-"] {
     float: left;
+}
+body{
+	background-color: #282828;
 }
 a{
 	text-decoration: none;
@@ -7,6 +11,11 @@ a{
 }
 img{
 	max-width: 100%;
+}
+hr{
+	border: 1px solid black;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 footer{
 	float: left;
@@ -38,7 +47,22 @@ header img{
 	float: left;
 	margin-right: 2%;
 	max-width: 220px;
-	height: 220px;
+	height: 220px;;
+}
+.des2{
+	text-align: left;
+	padding: 2%;
+}
+.des2 img{
+	float: left;
+	margin-right: 2%;
+	max-width: 320px;
+	height: 320px;
+}
+.comprar{
+	float: right;
+	margin-right: 15%;
+	margin-top: -3.5%
 }
 .hmm a{
 	font-size: 1.5em;
@@ -70,6 +94,9 @@ header img{
 	float: right;
 	margin-right: 0;
 	margin-left: 2%;
+}
+.first{
+	margin-bottom: 2%;
 }
 .row:after{
 	content: "";
@@ -187,8 +214,4 @@ header img{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
-}
-
-.descricaoContent {
-	white-space: pre-line;
 }

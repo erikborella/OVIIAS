@@ -18,7 +18,12 @@ else {
                 </div>
             </article>
         </div>
-        <hr>`;
+        <div class="comprar">
+            <button>Adicionar ao carrinho</button>
+        </div>
+        <br>
+        <hr class="difff">
+        `;
     }
 
     $(".conteudo", content);
@@ -27,7 +32,7 @@ else {
 // TODO: Essa função vai servir para poder dizer qual é o indice do produto selecionado para poder ser gerado posteriomente
 function selecProd(index) {
     console.log(index);
-    
+
 }
 
 //essa função serve para adicionar o html gerado na pagina
