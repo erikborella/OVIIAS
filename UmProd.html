@@ -12,32 +12,19 @@
 
 <body>
     <div class="joaquin">
-        <h1 class="tituloProduto">Produtos : <a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img
+        <h1 class="tituloProduto"><span id="titulo">Produtos : </span><a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img
                     src="icon/sair.svg" class="comprar3"></a><a href="carinho.html"><img src="icon/carinho.svg" class="comprar2"></a></h1>
         <hr class="first">
-        <main class="col-12 col-s-12 conteudo">
 
-            <div class="row">
-                <article class="col-6 col-s-12 des2">
-                    <a onClick=""><img src=""></a>
-                    <div class="hmm">
-                        <a></a>
-                        <p class="descricaoContent"></p>
-                    </div>
-                </article>
-            </div>
-            <div class="comprar">
-                <button>Adicionar ao carrinho</button>
-            </div>
-            <br>
-            <hr class="difff">
+        <main class="col-12 col-s-12 conteudo" id="content">
 
-
+            <h1>Produto não encontrado</h1>
 
         </main>
 
     </div>
 
+    <script src="js/umProdGenerator.js"></script>
 </body>
 
 </html>

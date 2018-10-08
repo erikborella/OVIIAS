@@ -31,8 +31,8 @@ else {
 
 // TODO: Essa função vai servir para poder dizer qual é o indice do produto selecionado para poder ser gerado posteriomente
 function selecProd(id) {
-    console.log(id);
-
+    localStorage.setItem("idProdSelec", id);
+    window.location.replace("UmProd.html");
 }
 
 function addCarinho(id) {
