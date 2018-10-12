@@ -64,13 +64,7 @@ function addCarinho(id) {
                 quant: 1
             })
         }
-<<<<<<< HEAD
-
-        alert("Produto adicionado ao carinho");
-
-=======
         alert("Adicionado no carinho com sucesso!")
->>>>>>> cde3d731711268d0f7215c5ec2fa664aa6cb703d
         localStorage.setItem("user", JSON.stringify(user));
 
     }
