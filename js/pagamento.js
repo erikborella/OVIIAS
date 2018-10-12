@@ -7,9 +7,7 @@ if (!usuario) {
 }
 
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    
     return document.querySelector(element).value;
-    
 }
 
 function btn() {
@@ -68,7 +66,7 @@ function btn() {
     pode = confirm("Preço a pagar: " + preco + "\nDeseja confirmar a compra?");
 
     if (pode) {
-        alert("Compra efetuada com sucesso");
+        alert("Compra efetuava com sucesso");
         usuario[login].endereco.pais = pais;
         usuario[login].endereco.estado = estado;
         usuario[login].endereco.cidade = cidade;
@@ -77,6 +75,7 @@ function btn() {
         usuario[login].endereco.pagamento = credito;
         usuario[login].endereco.pagamento = validade;
         localStorage.setItem('user', JSON.stringify(usuario));
+        window.location.replace("Mostruario.html");
     } else {
         alert("Compra cancelada");
     }

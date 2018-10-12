@@ -71,8 +71,8 @@ function buy(pass) {
     if (pass === user[lIndex].senha) {
         user[lIndex].carinho = [];
         localStorage.setItem("user", JSON.stringify(user));
-        alert("Compra realizada com sucesso");
-        window.location.reload();
+        alert("Redirecionando para a página de pagamento");
+        window.location.replace("Pagamento.html");
     }
 }
 

@@ -12,7 +12,7 @@
 
 <body>
     <div class="joaquin">
-        <h1>Oviia's Departament Store - Pagamento<a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img src="icon/sair.svg" class="comprar3"></h1>
+        <h1>Oviia's Departament Store - Pagamento<a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img src="icon/sair.svg" class="comprar3"></a></h1>
         <hr class="first">
 
         <h2>Endereço</h2>
@@ -26,11 +26,11 @@
         <label>Bairro</label><br>
         <input type="text" id="inputBairro"></p>
         <label>CEP</label><br>
-        <input type="text" id="inputCep"></p>
+        <input type="text" id="inputCep" maxlength="8" placeholder="0000000"></p>
 
         <h2>Formas de Pagamento</h2>
         <hr class="first">
-        <label for="#inputCredito">Número do cartão</label><br>
+        <label>Número do cartão</label><br>
         <input type="text" id="inputCredito" maxlength="16" placeholder="0000 0000 0000 0000"></p>
         <label>Nome do titular</label><br>
         <input type="text" id="inputNome"></p>
