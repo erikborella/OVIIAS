@@ -1,6 +1,6 @@
-var usuario = localStorage.getItem('user'); // Pega a string do localstorage
+var usuario = JSON.parse(localStorage.getItem('user')); // Pega a string do localstorage
 var login = localStorage.getItem('loggedIndex'); //pega o indice de login da pessoa
-usuario = JSON.parse(usuario); //passa a string que veio do localstorage e transforma em arquivo json
+var produtos = JSON.parse(localStorage.getItem("produtos"));
 
 if (!usuario) {
     usuario = [];
@@ -18,8 +18,7 @@ function btn() {
     var cep = $("#inputCep");
     var credito = $("#inputCredito");
     var validade = $("#inputValidade");
-    var produtos;
-    var preco;
+    var preco = 0;
     var pode = false;
 
     if (!login) {
@@ -55,12 +54,8 @@ function btn() {
         return;
     }
 
-    for (var i = 0; i < usuario[login].carinho.lenght; i++) {
-        for (var j = 0; j < produtos.lenght; j++) {
-            if (usuario[login].carinho[i] == produtos[j].id) { // Soma os preços dos produtos que estão no carinho
-                preco += carinho[i].preco;
-            }
-        }
+    for (let i = 0; i < usuario[login].carinho.length; i++) {
+        preco += usuario[login].carinho[i].quant * (produtos[usuario[login].carinho[i].id].preco);
     }
 
     pode = confirm("Preço a pagar: " + preco + "\nDeseja confirmar a compra?");
@@ -74,6 +69,7 @@ function btn() {
         usuario[login].endereco.cep = cep;
         usuario[login].endereco.pagamento = credito;
         usuario[login].endereco.pagamento = validade;
+        usuario[login].carinho = [];
         localStorage.setItem('user', JSON.stringify(usuario));
         window.location.replace("Mostruario.html");
     } else {

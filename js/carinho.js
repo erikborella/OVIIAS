@@ -42,26 +42,26 @@ function gerate() {
 
         $("#precoTotal", `Preço total: ${totalP} R$`)
 
-    }
-
-    var allClassTD = document.getElementsByClassName("quantChange");
-
-    for (let ind = 0; ind < allClassTD.length; ind++) {
-
-        allClassTD[ind].addEventListener("change", () => {
-
-            for (let i = 0; i < allClassTD.length; i++) {
-    
-                let index = allClassTD[i].attributes[0].value;
+        
+        var allClassTD = document.getElementsByClassName("quantChange");
+        
+        for (let ind = 0; ind < allClassTD.length; ind++) {
+            
+            allClassTD[ind].addEventListener("change", () => {
                 
-                user[lIndex].carinho[index].quant = allClassTD[i].value;
-       
-            }
-
-            localStorage.setItem("user", JSON.stringify(user));
-
-            gerate();
-        })
+                for (let i = 0; i < allClassTD.length; i++) {
+                    
+                    let index = allClassTD[i].attributes[0].value;
+                    
+                    user[lIndex].carinho[index].quant = allClassTD[i].value;
+                    
+                }
+                
+                localStorage.setItem("user", JSON.stringify(user));
+                
+                gerate();
+            })
+        }
     }
 
 
@@ -69,8 +69,6 @@ function gerate() {
 
 function buy(pass) {
     if (pass === user[lIndex].senha) {
-        user[lIndex].carinho = [];
-        localStorage.setItem("user", JSON.stringify(user));
         alert("Redirecionando para a página de pagamento");
         window.location.replace("Pagamento.html");
     }

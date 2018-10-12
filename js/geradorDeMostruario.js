@@ -15,7 +15,8 @@ else {
                 <div class="hmm">
                 <a>${produtos[i].nome}</a>
                     <p class="descricaoContent">${produtos[i].dados.descricao}</p>
-                </div>
+                    <h3 class="descricaoContent">${produtos[i].preco} R$</h3>
+                </div
             </article>
         </div>
         <div class="comprar">
@@ -63,6 +64,8 @@ function addCarinho(id) {
                 quant: 1
             })
         }
+
+        alert("Produto adicionado ao carinho");
 
         localStorage.setItem("user", JSON.stringify(user));
 

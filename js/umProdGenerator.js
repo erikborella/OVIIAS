@@ -10,6 +10,7 @@ if (pId <= prods.length) {
                         <div class="hmm">
                             <a>${prods[pId].nome}</a>
                             <p class="descricaoContent">${prods[pId].dados.descricao}</p>
+                            <h3 class="descricaoContent">${prods[pId].preco} R$</h3>
                         </div>
                     </article>
                     </div>
