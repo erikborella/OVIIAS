@@ -63,7 +63,7 @@ function addCarinho(id) {
                 quant: 1
             })
         }
-
+        alert("Adicionado no carinho com sucesso!")
         localStorage.setItem("user", JSON.stringify(user));
 
     }

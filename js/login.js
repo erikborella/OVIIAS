@@ -7,8 +7,8 @@ if (!usuario) {
 
 function btn() {
     var username = $("#inputUsername");
-    var senha = $("#inputPassword");
-    var pode = false;
+    var senha = $("#inputPassword"); //pega os valores de input
+    var pode = false; 
 
     if(!username){
         alert("Informe seu nome de usuário");
@@ -20,11 +20,11 @@ function btn() {
     }
 
     for (var i = 0; i < usuario.length; i++) {
-        if (usuario[i].user === username && usuario[i].senha === senha) {
+        if (usuario[i].user === username && usuario[i].senha === senha) {  // faz a verificação pra ver se o usuário existe 
             pode = true;
             alert("Parabéns");
             localStorage.setItem('loggedIndex', ''+i);
-            window.location.replace("Mostruario.html");
+            window.location.replace("Mostruario.html"); //redireciona a página para o mostruario
             break;
         }
     }
