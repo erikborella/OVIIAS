@@ -6,7 +6,7 @@ if (pId <= prods.length) {
 
     var html = ` <div class="row">
                     <article class="col-6 col-s-12 des2">
-                        <a onClick=""><img src="${prods[pId].dados.imgs}"></a>
+                        <a onClick=""><img src="img/${prods[pId].dados.imgs}"></a>
                         <div class="hmm">
                             <a>${prods[pId].nome}</a>
                             <p class="descricaoContent">${prods[pId].dados.descricao}</p>
