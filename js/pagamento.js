@@ -70,6 +70,7 @@ function btn() {
         usuario[login].endereco.pagamento = credito;
         usuario[login].endereco.pagamento = validade;
         usuario[login].carinho = [];
+        
         localStorage.setItem('user', JSON.stringify(usuario));
         window.location.replace("Mostruario.html");
     } else {
