@@ -7,12 +7,9 @@ if (!usuario) {
 }
 
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    try {
-        return document.querySelector(element).value;
-    }
-    catch {
-        console.error("elemento não encontrado");
-    }
+    
+    return document.querySelector(element).value;
+    
 }
 
 function btn() {

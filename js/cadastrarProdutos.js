@@ -177,8 +177,8 @@ function cadastrar() {
             alert("Alguns campos não foram digitados");
         }
         else {
-            var log = addProdutos_AutoId(name, tipo, estoque, preco, descricao, cor, img);
-            alert(log.message);
+            var logg = addProdutos_AutoId(name, tipo, estoque, preco, descricao, cor, img);
+            alert("Produto cadastrado com sucesso");
         }
 
     }

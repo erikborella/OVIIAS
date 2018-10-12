@@ -24,6 +24,7 @@ function btn() {
             pode = true;
             alert("Parabéns");
             localStorage.setItem('loggedIndex', ''+i);
+            window.location.replace("Mostruario.html");
             break;
         }
     }

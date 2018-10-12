@@ -5,6 +5,11 @@ var prod = JSON.parse(localStorage.getItem("produtos"));
 var $ = (el) => document.querySelector(el);
 var $ = (el, val) => document.querySelector(el).innerHTML = val;
 
+if (lIndex === null) {
+    alert("Voce deve estar logado para acessar o carinho");
+    window.location.replace("Login.html")
+}
+
 gerate();
 
 function gerate() {
