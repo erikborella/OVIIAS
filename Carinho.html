@@ -7,21 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/cssMaisProd.css">
     <link rel="stylesheet" href="css/css.css">
-    <title>Oviia's: Mostruário</title>
+    <title>Oviia's: Carinho</title>
 </head>
 
 <body>
 
     <div class="joaquin">
-        <h1 class="tituloProduto">Mostruário<a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img
+        <h1 class="tituloProduto">Carrinho<a href="Login.html" onclick="localStorage.removeItem('loggedIndex')"><img
                     src="icon/sair.svg" class="comprar3"></a></h1>
         <hr class="first">
         <main class="col-12 col-s-12 conteudo">
-
-        </main>
-
-
+            <table id="customers">
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Nome do produto</td>
+                    <td><input type="number" placeholder="1" id="inputQnt" style="width:30%;"></td>
+                    <td>R$</td>
+                </tr>
+            </table>
+            <hr class="difff">
+            <table id="customers">
+                <tr>
+                    <td><button onClick="">Confirmar Compra</button></td>
+                    <td>Preço total: R$</td>
+                </tr>
+            </table>
+            <hr class="difff">
     </div>
+    </main>
+
+
+
 
 
     <script src="js/carinho.js"></script>

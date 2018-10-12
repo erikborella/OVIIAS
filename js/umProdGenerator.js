@@ -13,7 +13,6 @@ if (pId <= prods.length) {
                         </div>
                     </article>
                     </div>
-                    
                     <div class="comprar">
                         <button onClick="addCarinho(${pId})">Adicionar ao carrinho</button>
                     </div>
@@ -51,6 +50,6 @@ function addCarinho(id) {
         }
 
         localStorage.setItem("user", JSON.stringify(user));
-
+        alert("Produto adicionado com sucesso!");
     }
 }
