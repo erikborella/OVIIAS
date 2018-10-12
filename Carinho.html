@@ -17,23 +17,14 @@
                     src="icon/sair.svg" class="comprar3"></a></h1>
         <hr class="first">
         <main class="col-12 col-s-12 conteudo">
-            <table id="customers">
-                <tr>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
-                </tr>
-                <tr>
-                    <td>Nome do produto</td>
-                    <td><input type="number" placeholder="1" id="inputQnt" style="width:30%;"></td>
-                    <td>R$</td>
-                </tr>
-            </table>
+            
+            <div id="toGer"></div>
+                
             <hr class="difff">
             <table id="customers">
                 <tr>
-                    <td><button onClick="">Confirmar Compra</button></td>
-                    <td>Preço total: R$</td>
+                    <td><button onClick="buy(prompt('Digite a sua senha'))">Confirmar Compra</button></td>
+                    <td id="precoTotal"></td>
                 </tr>
             </table>
             <hr class="difff">
