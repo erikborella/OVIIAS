@@ -3,6 +3,7 @@ var prods = JSON.parse(localStorage.getItem("produtos"));
 
 //verica se o id existe
 if (pId <= prods.length) {
+
     var html = ` <div class="row">
                     <article class="col-6 col-s-12 des2">
                         <a onClick=""><img src="${prods[pId].dados.imgs}"></a>
@@ -18,9 +19,8 @@ if (pId <= prods.length) {
                     </div>
                     <br>
                     <hr class="difff">`;
-
+    document.querySelector("#titulo")
     document.querySelector("#content").innerHTML = html;
-
 
 }
 
