@@ -24,7 +24,7 @@ function btn() {
             pode = true;
             alert("Parabéns");
             localStorage.setItem('loggedIndex', ''+i);
-            window.location.replace("Mostruario.html"); //redireciona a página para o mostruario
+            window.location.replace("Index.html"); //redireciona a página para o index(página inicial)
             break;
         }
     }
