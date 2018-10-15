@@ -35,8 +35,6 @@ function btn() {
         alert("Email inválido");
         return;
     }
-    
-
     var robo = prompt('Digite exatamente "NÃO SOU UM ROBÔ"');
     boOrobo = robo === "NÃO SOU UM ROBÔ"; //Verifica se a pessoa é ou não um robo
 
