@@ -30,7 +30,7 @@ function gerate() {
             prop += `
             <tr>
                 <td>${produto.nome}</td>
-                <td><input data-carIndex="${i}" type="number" min="0" class="quantChange" value="${user[lIndex].carinho[i].quant}" style="width:30%;"></td>
+                <td><input data-carIndex="${i}" type="number" max="${produto.estoque}" min="0" class="quantChange" value="${user[lIndex].carinho[i].quant}" style="width:30%;"></td>
                 <td>R$${user[lIndex].carinho[i].quant * produto.preco}</td>
             </tr>
             `
