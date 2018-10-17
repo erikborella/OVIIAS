@@ -36,10 +36,5 @@ function btn() {
 
 
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    try {
-        return document.querySelector(element).value;
-    }
-    catch (e){
-        console.error("elemento não encontrado");
-    }
+    return document.querySelector(element).value;
 }

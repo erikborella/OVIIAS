@@ -13,7 +13,7 @@ function btn() {
     var password = $("#inputSenha"); //Seletor de elementos
     var email = $("#inputEmail");
     var pode = true;
-    var boOrobo = !true; 
+    var boOrobo = !true;
 
     if (!nome) {
         alert("Informe seu nome");
@@ -82,7 +82,7 @@ function btn() {
                 'carinho': [],
                 'idSelect': ''
             });
-            alert("Parabains");
+            alert("Parabéns");
             localStorage.setItem('user', JSON.stringify(usuario)); //envia o json pro localstorage
         }
 
@@ -91,10 +91,5 @@ function btn() {
 
 }
 function $(element) { //QUERIA PODER USAR JQUERY ;-;
-    try {
-        return document.querySelector(element).value;
-    }
-    catch (Exeption){
-        console.error("Elemento não encontrado");
-    }
+    return document.querySelector(element).value;
 }

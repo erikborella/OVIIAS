@@ -157,7 +157,7 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
 }
 
 function cadastrar() {
-    if (prompt("Digite a senha de admistrador") == "tijolinhos") {
+    if (prompt("Digite a senha de admistrador") == "2553") {
 
         /* Declaros sempre essa variavel $ por ela ser muito usada tanto para pegar elementos da pagina tanto para colocarmos lá
         Tiramos a ideia de usar o $ do Jquerry, pois estamos muitos famiarizados em usar esse recurso envolvendo o $ do propio Jquerry */
