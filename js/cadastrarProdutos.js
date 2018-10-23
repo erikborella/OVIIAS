@@ -120,7 +120,7 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
         //aqui começa a proucura da id
         let idCont = 1;
         let idValid = true;
-        
+
         do {
 
             idValid = true;
@@ -128,7 +128,7 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
 
             for (let i in prods) {
                 //se a id já existir, para o for e coloca a $idValid como false para o while poder continuar
-                
+
                 if (idCont == prods[i].id) {
                     idValid = false;
                     idCont++;
@@ -136,7 +136,7 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
                 }
             }
 
-        } while(!idValid);
+        } while (!idValid);
 
         prods.push({
             "nome": nome,
@@ -151,7 +151,7 @@ function addProdutos_AutoId(nome, tipo, estoque, preco, descricao, cor, imgs) {
             }
         });
 
-        localStorage.setItem("produtos", JSON.stringify(prods));        
+        localStorage.setItem("produtos", JSON.stringify(prods));
 
     }
 }
@@ -164,7 +164,7 @@ function cadastrar() {
         var $ = (element) => {
             return document.querySelector(element).value;
         };
-        
+
         let name = $("#nameI");
         let tipo = $("#tipoI");
         let estoque = $("#estoqueI");
